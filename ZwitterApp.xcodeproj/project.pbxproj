@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B16F414859C8F5F52455B8C /* Pods_ZwitterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9827B26C1B9B51F31A0DF8C5 /* Pods_ZwitterApp.framework */; };
+		2023B28B1F5BD99800A5CAE0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B28A1F5BD99800A5CAE0 /* SignInViewController.swift */; };
+		2023B28D1F5BDCE000A5CAE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023B28C1F5BDCE000A5CAE0 /* HomeViewController.swift */; };
 		20452A3A1F5BB8DB0006AD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20452A391F5BB8DB0006AD78 /* AppDelegate.swift */; };
 		20452A3C1F5BB8DB0006AD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20452A3B1F5BB8DB0006AD78 /* ViewController.swift */; };
 		20452A3F1F5BB8DB0006AD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20452A3D1F5BB8DB0006AD78 /* Main.storyboard */; };
@@ -15,10 +17,13 @@
 		20452A441F5BB8DB0006AD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20452A431F5BB8DB0006AD78 /* Assets.xcassets */; };
 		20452A471F5BB8DB0006AD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20452A451F5BB8DB0006AD78 /* LaunchScreen.storyboard */; };
 		2079023D1F5BBBE200DB4D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2079023C1F5BBBE200DB4D1E /* GoogleService-Info.plist */; };
+		207902401F5BCF8000DB4D1E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2079023F1F5BCF8000DB4D1E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C214E00CCB04DF8F3557553 /* Pods-ZwitterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwitterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZwitterApp/Pods-ZwitterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2023B28A1F5BD99800A5CAE0 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2023B28C1F5BDCE000A5CAE0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		20452A361F5BB8DB0006AD78 /* ZwitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZwitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20452A391F5BB8DB0006AD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20452A3B1F5BB8DB0006AD78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		20452A461F5BB8DB0006AD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20452A481F5BB8DB0006AD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2079023C1F5BBBE200DB4D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2079023F1F5BCF8000DB4D1E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9827B26C1B9B51F31A0DF8C5 /* Pods_ZwitterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZwitterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9539BC9A1F74C05920CF115 /* Pods-ZwitterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZwitterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZwitterApp/Pods-ZwitterApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +71,8 @@
 		20452A381F5BB8DB0006AD78 /* ZwitterApp */ = {
 			isa = PBXGroup;
 			children = (
+				2079023E1F5BCF2000DB4D1E /* Controllers */,
 				20452A391F5BB8DB0006AD78 /* AppDelegate.swift */,
-				20452A3B1F5BB8DB0006AD78 /* ViewController.swift */,
 				20452A3D1F5BB8DB0006AD78 /* Main.storyboard */,
 				20452A431F5BB8DB0006AD78 /* Assets.xcassets */,
 				20452A451F5BB8DB0006AD78 /* LaunchScreen.storyboard */,
@@ -75,6 +81,17 @@
 				2079023C1F5BBBE200DB4D1E /* GoogleService-Info.plist */,
 			);
 			path = ZwitterApp;
+			sourceTree = "<group>";
+		};
+		2079023E1F5BCF2000DB4D1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2023B28C1F5BDCE000A5CAE0 /* HomeViewController.swift */,
+				20452A3B1F5BB8DB0006AD78 /* ViewController.swift */,
+				2079023F1F5BCF8000DB4D1E /* SignUpViewController.swift */,
+				2023B28A1F5BD99800A5CAE0 /* SignInViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		72BCBDD98CF8A20AAB03C23F /* Frameworks */ = {
@@ -238,7 +255,10 @@
 			files = (
 				20452A3C1F5BB8DB0006AD78 /* ViewController.swift in Sources */,
 				20452A421F5BB8DB0006AD78 /* ZwitterApp.xcdatamodeld in Sources */,
+				207902401F5BCF8000DB4D1E /* SignUpViewController.swift in Sources */,
+				2023B28B1F5BD99800A5CAE0 /* SignInViewController.swift in Sources */,
 				20452A3A1F5BB8DB0006AD78 /* AppDelegate.swift in Sources */,
+				2023B28D1F5BDCE000A5CAE0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
