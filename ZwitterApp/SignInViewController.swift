@@ -47,7 +47,7 @@ class SignInViewController: UIViewController
         }
         else
         {
-            print("boş bırakmayınız")
+            print("boş bırakmayınız!")
         }
     }
 }

@@ -16,15 +16,15 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var about: UITextField!
     @IBOutlet weak var zwitter: UIButton!
     
+    
     var ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        zwitter.layer.cornerRadius = 8
+        self.zwitter.layer.cornerRadius = 8
             }
 
     
-
     @IBAction func startZwitter(_ sender: Any)
     {
         let userID = Auth.auth().currentUser?.uid
@@ -46,6 +46,9 @@ class HomeViewController: UIViewController {
         }
 
     }
+
+
+
    
 
 }

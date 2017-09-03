@@ -338,7 +338,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startZwitter:" destination="HNS-zH-wNf" eventType="touchUpInside" id="ciI-1i-7Hb"/>
+                                    <action selector="startZwitter:" destination="HNS-zH-wNf" eventType="touchUpInside" id="95x-OE-5Uh"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kısaca Kendinizi Tanıtın" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-yI-Faf">
@@ -381,7 +381,7 @@
                         <outlet property="about" destination="gvn-yI-Faf" id="Qla-MJ-WxF"/>
                         <outlet property="fullName" destination="bUa-D7-aqe" id="aJf-FG-cVV"/>
                         <outlet property="mentionName" destination="bfq-SZ-puo" id="iXY-HL-Uh8"/>
-                        <outlet property="zwitter" destination="3IR-dZ-79d" id="aCM-uV-JWO"/>
+                        <outlet property="zwitter" destination="3IR-dZ-79d" id="rBz-b1-lxN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtK-kh-nHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
