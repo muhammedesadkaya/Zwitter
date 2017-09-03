@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passField: UITextField!
     @IBOutlet weak var passAgainField: UITextField!
     
+    var ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,10 @@ class SignUpViewController: UIViewController {
                 }
                 else
                 {
-                    print("********** kayit basaliri *************")
+                    // veritabanı kayıt
+                    
+                    self.ref.child("users").child(user!.uid).setValue(["email": self.emailField.text])
+                    //users tablonun adı.
                     self.emailField.text = ""
                     self.passField.text = ""
                     self.passAgainField.text = ""

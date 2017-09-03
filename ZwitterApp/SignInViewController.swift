@@ -14,6 +14,7 @@ class SignInViewController: UIViewController
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,13 +36,12 @@ class SignInViewController: UIViewController
                 }
                 else
                 {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    // bu kısım başka sayfaya gitmesi için
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil) // main = main.storyboard ismi.
                     
-                    let HomeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
-                    
-                    self.present(HomeVC, animated: true, completion: nil)
-                    
-                    print("******* basarili giris ************")
+                    let HomeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController //homevc ye gitmesi için
+                    // HomeVC bir segue gibi çalışır. StoryBoard ID ye verilen isim.
+                    self.present(HomeVC, animated: true, completion: nil) // animasyonlu şekilde sayfa geçişi
                 }
             })
         }
@@ -49,5 +49,5 @@ class SignInViewController: UIViewController
         {
             print("boş bırakmayınız")
         }
-        }
+    }
 }
