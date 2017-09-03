@@ -6,6 +6,6 @@ It's all free.
 
 Frameworks:
 
-Firebase
-Alamofire
-SwiftyJSON
+FirebaseS /
+Alamofire /
+SwiftyJSON 
