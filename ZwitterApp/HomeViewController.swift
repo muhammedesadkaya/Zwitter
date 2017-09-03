@@ -7,29 +7,45 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var mentionName: UITextField!
+    @IBOutlet weak var fullName: UITextField!
+    @IBOutlet weak var about: UITextField!
+    @IBOutlet weak var zwitter: UIButton!
+    
+    var ref = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        zwitter.layer.cornerRadius = 8
+            }
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
-    /*
-    // MARK: - Navigation
+    @IBAction func startZwitter(_ sender: Any)
+    {
+        let userID = Auth.auth().currentUser?.uid
+        print(userID!)
+        
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if (snapshot.exists())
+            {
+                self.ref.child("users").child(userID!).child("mentionName").setValue(self.mentionName.text!)
+                self.ref.child("users").child(userID!).child("fullName").setValue(self.fullName.text!)
+                self.ref.child("users").child(userID!).child("about").setValue(self.about.text!)
+                
+            }
+            
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+   
 
 }

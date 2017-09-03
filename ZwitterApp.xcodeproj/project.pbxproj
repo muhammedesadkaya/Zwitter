@@ -86,8 +86,8 @@
 		2079023E1F5BCF2000DB4D1E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2023B28C1F5BDCE000A5CAE0 /* HomeViewController.swift */,
 				20452A3B1F5BB8DB0006AD78 /* ViewController.swift */,
+				2023B28C1F5BDCE000A5CAE0 /* HomeViewController.swift */,
 				2079023F1F5BCF8000DB4D1E /* SignUpViewController.swift */,
 				2023B28A1F5BD99800A5CAE0 /* SignInViewController.swift */,
 			);
